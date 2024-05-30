@@ -17,8 +17,8 @@ export const navData = [
     icon: <HiHome />
   },
   {
-    name: 'Resume',
-    path: '/resume',
+    name: 'resume',
+    path: '/resume.pdf',
     icon: <HiBookOpen />
   },
   {
@@ -26,7 +26,6 @@ export const navData = [
     path: '/services',
     icon: <HiRectangleGroup />
   },
-  // { name: 'work', path: '/work', icon: <HiViewColumns /> },
   {
     name: 'contact',
     path: '/contact',

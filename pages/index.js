@@ -22,20 +22,10 @@ const Home = () => {
             <span className="text-accent" style={{ fontSize: '35px', marginTop: '-40px' }}> Community Manager & Writer</span>
 
             <br />
-            {/* <motion.h3 variants={fadeIn('down' ,0.2)} initial='hidden' animate='show' exit='hidden' className='h3  text-accent' style={{ fontSize: '35px' }}>
-            Community Manager & Writer
-          </motion.h3> */}
-
-
-              <div className=" flex justify-center xl:hidden relative ">
-                <ProjectsBtn/>
-
-              </div>
-              <motion.div variants={fadeIn('down' ,0.4)}  initial='hidden' animate='show' exit='hidden' className=" hidden xl:flex">
-                <ProjectsBtn/>
-
-              </motion.div>
-
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
       </div>
       <div className=" w-[1200px] h-full absolute right-0 bottom-5 ">

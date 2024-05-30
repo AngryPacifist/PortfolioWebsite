@@ -11,20 +11,17 @@ const ServiceSlider = () => {
   const serviceData = [
     {
       icon: <RxCrop />,
-      title: 'Management',
-      description: 'Here are a few of my community management',
+      title: 'Comm. Management',
       link: '/work',
     },
     {
       icon: <RxPencil2 />,
       title: 'Writer',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      externalLink: 'https://angrypacifist.substack.com', // Add external link here
+      externalLink: 'https://angrypacifist.substack.com',
     },
     {
       icon: <RxDesktop />,
       title: 'Development',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
   ];
 
