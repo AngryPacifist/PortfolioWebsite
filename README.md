@@ -1,6 +1,8 @@
 # Outis Portfolio
-- Steps for installation locally
-- Clone into the repo
-- Open the folder in terminal
-- Run npm install
-- lastly, run npm run dev
+This project is deployed to hhtps://outis.id
+
+# Steps for local installation
+- Clone the repo
+- Open the folder path in your cmd terminal
+- Run `npm install`
+- lastly, run `npm run dev`
