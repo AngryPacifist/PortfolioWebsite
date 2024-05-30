@@ -1,4 +1,13 @@
-// data
+import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation'; // Import Swiper navigation styles
+import 'swiper/css/pagination'; // Import Swiper pagination styles
+import { Navigation, Pagination } from "swiper"; // Import Swiper navigation and pagination modules
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import Image from "next/image";
+
+// Sample data
 const workSlides = {
   slides: [
     {
@@ -29,7 +38,6 @@ const workSlides = {
           name: 'NFT Arsenal',
           role: 'Community Manager',
           year: '2021',
-          // url: 'https://twitter.com/blacklabelcx',
         },
         {
           title: 'Polychain Monsters',
@@ -96,56 +104,63 @@ const workSlides = {
   ],
 };
 
-import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation'; // Import Swiper navigation styles
-import { Pagination } from "swiper"; // Import Swiper pagination module
-
-import { Bs0Circle, BsArrowRight, BsDisplay } from "react-icons/bs";
-import Image from "next/image";
-
 const WorkSlider = () => {
   return (
-    <Swiper
-      spaceBetween={10}
-      pagination={{
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        }
-      }}
-      modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
-    >
-      {workSlides.slides.map((item, index) => {
-        return (
+    <div className="relative">
+      <Swiper
+        spaceBetween={10}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Navigation, Pagination]}
+        className="h-[280px] sm:h-[480px]"
+      >
+        {workSlides.slides.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
-              {item.images.map((img, inx) => {
-                return (
-                  <a key={inx} href={img.url} target="_blank" rel="noopener noreferrer" className="relative rounded-lg overflow-hidden flex items-center justify-start group">
-                    <div className="flex items-center justify-center relative overflow-hidden group">
-                      <Image src={img.path} width={500} height={300} alt="image" />
-                      <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-300"></div>
-                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
-                        {img.name && <div>{img.name}</div>} {/* Display name */}
-                        {img.role && <div>{img.role}</div>} {/* Display role */}
-                        <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          {img.year && <div>{img.year}</div>} {/* Display year */}
-                        </div>
+              {item.images.map((img, inx) => (
+                <a key={inx} href={img.url} target="_blank" rel="noopener noreferrer" className="relative rounded-lg overflow-hidden flex items-center justify-start group">
+                  <div className="flex items-center justify-center relative overflow-hidden group">
+                    <Image src={img.path} width={500} height={300} alt={img.name} />
+                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-300"></div>
+                    <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                      {img.name && <div>{img.name}</div>}
+                      {img.role && <div>{img.role}</div>}
+                      <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
+                        {img.year && <div>{img.year}</div>}
                       </div>
                     </div>
-                  </a>
-                );
-              })}
+                  </div>
+                </a>
+              ))}
             </div>
           </SwiperSlide>
-        );
-      })}
-    </Swiper>
+        ))}
+      </Swiper>
+      <div className="swiper-button-prev bottom-0 left-0">
+        <BsArrowLeft className="text-2xl text-gray-700 hover:text-gray-900" />
+      </div>
+      <div className="swiper-button-next bottom-0 right-0">
+        <BsArrowRight className="text-2xl text-gray-700 hover:text-gray-900" />
+      </div>
+      <style jsx>{`
+        .swiper-button-prev, .swiper-button-next {
+          position: absolute;
+          top: 100%;
+          transform: translateY(-50%);
+        }
+        .swiper-button-prev {
+          left: 10px;
+        }
+        .swiper-button-next {
+          right: 10px;
+        }
+      `}</style>
+    </div>
   );
 };
 

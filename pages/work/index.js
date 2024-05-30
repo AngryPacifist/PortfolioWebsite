@@ -27,9 +27,6 @@ const Work = () => {
     animate='show' 
     exit='hidden'  className=" mb-4 max-w-[400px] mx-auto lg:mx-0">
 
-      I am Outis 
-      and hereare couple of my work in Community management
-
     </motion.p>
     </div>
 <motion.div variants={fadeIn('down' , '0.6')} 
