@@ -1,5 +1,5 @@
 # Outis Portfolio
-This project is deployed to htps://outis.id
+This project is deployed to https://outis.id
 
 # Steps for local installation
 - Clone the repo
