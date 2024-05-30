@@ -6,7 +6,7 @@ export default function Document() {
     <Html>
       <Head>
         <link rel="icon" href="/avatar.png" />
-        <title>outis</title>
+        <title>OUTIS</title>
         <meta name="description" content="OUTIS" />
       </Head>
       <body>
