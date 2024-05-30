@@ -16,12 +16,13 @@ const ServiceSlider = () => {
     },
     {
       icon: <RxPencil2 />,
-      title: 'Writer',
+      title: 'Writing',
       externalLink: 'https://angrypacifist.substack.com',
     },
     {
       icon: <RxDesktop />,
       title: 'Development',
+      externalLink: 'https://external-link-for-development.com', // Add the external link here
     },
   ];
 

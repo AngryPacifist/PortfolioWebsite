@@ -63,17 +63,14 @@ const Services = () => {
     initial='hidden' 
     animate='show' 
     exit='hidden'  className=" mb-4 max-w-[400px] mx-auto lg:mx-0">
-
-    I am outis and 
-     this welcome to my portfolio experience all the work i have done here.
-
+      Welcome to my portfolio, a showcase of my diverse experiences and expertise across different fields.
     </motion.p>
     </div>
-<motion.div variants={fadeIn('down' , '0.6')} 
-    initial='hidden' 
-    animate='show' 
-    exit='hidden' className=" w-full xl:max-w-[65%] ">
-</motion.div>
+  <motion.div variants={fadeIn('down' , '0.6')} 
+      initial='hidden' 
+      animate='show' 
+      exit='hidden' className=" w-full xl:max-w-[65%] ">
+  </motion.div>
      </div>
      <ServiceSlider className="ml-10" />
 

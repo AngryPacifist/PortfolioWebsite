@@ -22,7 +22,7 @@ export const navData = [
     icon: <HiBookOpen />
   },
   {
-    name: 'services',
+    name: 'portfolio',
     path: '/services',
     icon: <HiRectangleGroup />
   },

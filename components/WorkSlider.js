@@ -159,7 +159,7 @@ const WorkSlider = () => {
         .swiper-button-next {
           right: 10px;
         }
-      `}</style>
+      `}</style> 
     </div>
   );
 };
