@@ -26,7 +26,7 @@ const Work = () => {
     initial='hidden' 
     animate='show' 
     exit='hidden'  className=" mb-4 max-w-[400px] mx-auto lg:mx-0">
-      Here you can find all of the projects and communities I've built/worked with.
+      Here you can find all of the projects and communities I've built/worked with.
 
     </motion.p>
     </div>

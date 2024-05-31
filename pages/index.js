@@ -14,7 +14,7 @@ const Home = () => {
         <div className=" text-center flex flex-col  justify-center xl:pt-40  xl:text-left h-full container  mx-auto ">
 
           <motion.h3 variants={fadeIn('down' ,0.2)} initial='hidden' animate='show' exit='hidden' className='h3' style={{ fontSize: '45px' }}>
-            Hi I'm
+            Hi, I'm
           </motion.h3>
             <motion.h1  variants={fadeIn('down' ,0.2)}  initial='hidden' animate='show' exit='hidden' className=" h1">
                 OUTIS <br style={{marginTop: '0'}} />
