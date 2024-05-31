@@ -22,7 +22,7 @@ const ServiceSlider = () => {
     {
       icon: <RxDesktop />,
       title: 'Development',
-      externalLink: 'https://external-link-for-development.com', // Add the external link here
+      externalLink: 'https://github.com/Angrypacifist',
     },
   ];
 
